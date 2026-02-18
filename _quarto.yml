@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - src/index.qmd
+
+website:
+  title: "304.1 - Gen AI and robot control"
+  repo-url: https://github.com/NathanAnto/duckify-portfolio
+  repo-actions: [edit]
+  navbar:
+    left:
+      - href: src/index.qmd
+        text: Home
+    tools:
+      - icon: github
+        href: https://github.com/NathanAnto/duckify-portfolio
+        target: _blank
+        text: Project GitHub
+
+  page-footer:
+    left: |
+      Made with [Quarto](https://quarto.org/){target="_blank"}
+    center:
+      - text: "304.2 Medical data science course | © 2026"
+    right:
+      - icon: github
+        href: https://github.com/NathanAnto/duckify-portfolio
+        target: _blank
+        aria-label: Project GitHub
+
+format:
+  html:
+    respect-user-color-scheme: true
+    toc: true
+    toc-title: "Table of Content"
+    toc-depth: 4
+    theme:
+      light: [cosmo, src/theme.scss]
+      dark: [cosmo, src/theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
