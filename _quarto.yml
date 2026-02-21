@@ -3,6 +3,7 @@ project:
   output-dir: _site
   render:
     - src/index.qmd
+    - src/articles
 
 website:
   title: "304.1 - Gen AI and robot control"

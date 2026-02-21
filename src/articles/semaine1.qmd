@@ -1,0 +1,76 @@
+---
+title: Semaine 1
+published-title: "Last updated on"
+date: 2026-02-20
+format:
+  html:
+    toc: true
+    toc-depth: 4
+---
+
+## Préparation
+
+Cette semaine, la grande majorité du travail était de discuter avec le groupe de comment réaliser la tâche de dessiner n'importe quel design sur un canard à l'aide d'un bras robot. De mon côté, je suis intégré au groupe en charge du bras robotisé. Pour commencer, les milestones et tâches ont dû être définis pour avoir des objectifs à viser.
+
+![Tâches du bras robot Sprint 1](../assets/semaine1/sprint1.png){#fig-sprint1}
+
+Ensuite on a chacun commencer par lire et comprendre les differents repositories à utiliser:
+
+- [UR3E Control](https://github.com/ISC-HEI/ur3e-control): A Python lib to control
+    - a Universal Robots UR3-e arm
+    - a Robotiq Hand-Wrist Camera
+    - a Robotiq Two Fingers Adaptive Gripper
+
+- [UR3E Simulator](https://github.com/ISC-HEI/ur3e-simulator): A robot arm simulator app
+
+Nous avons réussi à démarrer et à jouer avec la simulation dans Gazebo.
+
+![Simulation Démo](../assets/semaine1/demo.mkv){#fig-demo}
+
+Après, un des milestones pour la fin de la semaine était de déplacer le bras à travers une sequence de mouvements. Il fallait pouvoir donner des commandes au bras avec un script python.
+
+![UR3E Démo](../assets/semaine1/ur3e.mp4){#fig-ur3e}
+
+Mais a part ces succès de groupe, individuellement j'ai surtout pris connaissance des libraires et des outils fournis. J'ai pris pas mal de temps à me renseigner sur le robot et ses fonctionnalités. J'ai écrit un simple rapport sur mes recherches qui se trouve sur le github [Duckify](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
+
+Avec ces informations, il fallait aussi définir des détails détails techniques sur comment le robot va se comporter.
+
+- Comment tenir le stylo
+- Comment le support va tenir le(s) stylo(s)
+- Où mettre le support des stylo
+
+::: {#fig-sketches layout-ncol=2}
+
+![Grip Pen](../assets/semaine1/pen-grip.png){width=300}
+
+![Pen Support](../assets/semaine1/pen-support.png)
+
+Sketches
+
+:::
+
+## Compétences acquises
+
+### Analyser un problème informatique complexe
+
+* J'ai participé à la décomposition du problème de dessin robotisé en composants gérables (sprints/milestones).
+* J'ai identifié les contraintes physiques liées à l'outil, notamment la gestion du grip du stylo et son support.
+* **Preuve :** [Sketches des supports](#fig-sketches) et [Sprint 1 Roadmap](#fig-sprint1).
+
+### Implémenter une approche théorique modélisée
+
+* J'ai configuré l'environnement de simulation Gazebo pour valider les modèles de contrôle du bras UR3-e.
+* J'ai implémenté un script Python permettant de déplacer le bras selon une séquence de mouvements définie.
+* **Preuve :** [Simulation Démo](#fig-demo) et [Vidéo UR3E](#fig-ur3e).
+
+### Communiquer clairement et efficacement
+
+* J'ai rédigé un rapport technique synthétisant mes recherches sur les fonctionnalités du robot pour l'équipe.
+* J'ai utilisé GitHub pour documenter mes avancées via une Pull Request structurée.
+* **Preuve :** [Rapport sur Duckify PR #10](https://github.com/Toys-R-Us-Rex/Duckify/pull/10).
+
+## Auto-Réflexion
+
+Bien que la simulation et les premiers mouvements aient été un succès, j'ai passé beaucoup de temps sur la phase de prise en main des librairies. À l'avenir, je devrais paralléliser davantage la lecture de la documentation technique avec des tests pratiques sur le robot réel pour identifier plus tôt les limites de couple ou de précision.
+
+Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Cette petite tâches que nous avons négligé nous fait perdre beacoup de temps, car nous aurions pu définir les mesures exacte pour notre collegue de l'impression 3D.
