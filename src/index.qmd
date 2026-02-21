@@ -1,5 +1,16 @@
 ---
-title: "304.1 - Gen AI and robot control course documentation"
+title: "304.1 - Gen AI and robot control Portfolio"
+published-title: "Last updated on"
+date: 2026-02-18
+listing:
+- id: portfolios
+  contents: ./articles/
+  type: table
+  sort: "date desc"     # last posted on top
+  fields: [date, title] # tags
 ---
 
-This is my portfolios
+Bienvenue dans mon portfolio du projet Duckify
+
+:::{#portfolios}
+:::
