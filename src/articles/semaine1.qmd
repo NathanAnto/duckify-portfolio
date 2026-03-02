@@ -74,3 +74,12 @@ Sketches
 Bien que la simulation et les premiers mouvements aient été un succès, j'ai passé beaucoup de temps sur la phase de prise en main des librairies. À l'avenir, je devrais paralléliser davantage la lecture de la documentation technique avec des tests pratiques sur le robot réel pour identifier plus tôt les limites de couple ou de précision.
 
 Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Cette petite tâches que nous avons négligé nous fait perdre beacoup de temps, car nous aurions pu définir les mesures exacte pour notre collegue de l'impression 3D.
+
+### Questions sur le Processus d'Embauche
+
+1. **Q: Comment avez-vous validé la sécurité des mouvements du bras avant de passer sur le matériel réel ?**
+   * **R:** Nous avons utilisé le simulateur Gazebo (`ur3e-simulator`) pour vérifier qu'aucune collision n'avait lieu avec l'environnement virtuel avant d'exécuter les scripts sur le robot physique.
+2. **Q: Quels critères avez-vous utilisés pour choisir le support de stylo ?**
+   * **R:** Le choix s'est porté sur un support stable permettant un changement rapide, tout en respectant la contrainte de prise du gripper "Two Fingers Adaptive".
+3. **Q: Comment documentez-vous vos recherches pour qu'elles profitent à l'équipe ?**
+   * **R:** Via la rédaction de rapports objectifs sur GitHub et la création de sketches techniques partagés lors des réunions de sprint.
