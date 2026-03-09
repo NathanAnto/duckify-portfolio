@@ -1,7 +1,7 @@
 ---
 title: Semaine 1
 published-title: "Last updated on"
-date: 2026-02-20
+date: 2026-02-28
 format:
   html:
     toc: true
