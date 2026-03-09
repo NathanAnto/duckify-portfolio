@@ -20,19 +20,21 @@ J'ai alors commencé à rechercher la position optimale du canard.
 
 * J'ai décomposé le problème de validation de la zone atteignable du robot en étapes claires : génération de points sur la surface, vérification des collisions et optimisation de la position de l'objet.
 * J'ai identifié les paramètres critiques (limites articulaires, obstacles, orientation de l'outil) influençant la capacité du bras à atteindre chaque point.
-* Preuve : Code de sampling et collision et Rapport Reachability.
+* **Preuve :** Code de sampling et collision et Rapport Reachability.
   * [reachability.py](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/urbasic/URBasic/reachability.py)
 
 ### Implémenter une approche théorique modélisée
+
 * J'ai modélisé la logique de reachability en Python, en utilisant des échantillons sur les faces du mesh et en intégrant la détection de collision avec des obstacles paramétrés (mur, boîte, sphère).
 * J'ai automatisé l’ajustement de la position de l’objet pour maximiser le nombre de points atteignables, en appliquant une heuristique basée sur les points non atteints.
-* Preuve : Notebook de simulation et Visualisation 3D.
+* **Preuve :** Notebook de simulation et Visualisation 3D.
   * [duck_position.ipynb](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/my_simulation/demos/duck_position.ipynb)
 
 ### Communiquer clairement et efficacement
+
 * J'ai documenté le workflow de validation de reachability dans le notebook, avec des visualisations et des commentaires pour faciliter la compréhension par l’équipe.
 * J'ai partagé les résultats et les limitations rencontrées lors des tests, permettant à chacun d’adapter ses propres modules (impression 3D, planification).
-* Preuve : Notebook annoté et Discussion technique.
+* **Preuve :** Notebook annoté et Discussion technique.
   * [reachability_logic.typ](https://github.com/Toys-R-Us-Rex/Duckify/blob/5ad7062d0ad75999d8382ca4f61d3e6b3f3b6256/docs/architecture/robot/reachability_logic.typ)
 
 ### Auto-Réflexion

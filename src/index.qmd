@@ -1,16 +1,141 @@
 ---
 title: "304.1 - Gen AI and robot control Portfolio"
 published-title: "Last updated on"
-date: 2026-02-18
-listing:
-- id: portfolios
-  contents: ./articles/
-  type: table
-  sort: "date desc"     # last posted on top
-  fields: [date, title] # tags
+date: 2026-03-03
+format:
+  html:
+    toc: true
+    toc-depth: 4
 ---
 
 Bienvenue dans mon portfolio du projet Duckify
+
+# Compétences acquises
+
+## Computer science engineer
+
+### Analyser un problème informatique complexe
+
+#### 1.
+  * J'ai participé à la décomposition du problème de dessin robotisé en composants gérables (sprints/milestones).
+  * J'ai identifié les contraintes physiques liées à l'outil, notamment la gestion du grip du stylo et son support.
+  * **Preuve :** Sketches des supports et Sprint 1 Roadmap.
+    * [Grip Pen](./assets/semaine1/pen-grip.png)
+    * [Pen Support](./assets/semaine1/pen-support.png)
+    * [Sprint 1 Roadmap](./assets/semaine1/sprint1.png)
+
+#### 2.
+  * J'ai décomposé le problème de validation de la zone atteignable du robot en étapes claires : génération de points sur la surface, vérification des collisions et optimisation de la position de l'objet.
+  * J'ai identifié les paramètres critiques (limites articulaires, obstacles, orientation de l'outil) influençant la capacité du bras à atteindre chaque point.
+  * **Preuve :** Code de sampling et collision et Rapport Reachability.
+    * [reachability.py](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/urbasic/URBasic/reachability.py)
+
+### Concevoir une solution théorique modélisée
+
+#### 1.
+  * J'ai crée un environment de simulation qui intègre le canard sur son support et le stylo dans la main du robot. Cela nous permettra d'analyser et d'evaluer des simulations de dessins sur le canard sans devoir le faire sur le robot physique.
+  * J'ai créé un fichier markdown pour expliquer comment mettre l'environment en place.
+  * Preuve:
+    * [Environment de simulation](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/assets/sim-env.png)
+    * [Tutoriel](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
+
+### Implémenter une approche théorique modélisée
+
+#### 1.
+  * J'ai configuré l'environnement de simulation Gazebo pour valider les modèles de contrôle du bras UR3-e.
+  * J'ai implémenté un script Python permettant de déplacer le bras selon une séquence de mouvements définie.
+  * **Preuve :** [Simulation Démo](./assets/semaine1/demo.mkv) et [Vidéo UR3E](./assets/semaine1/ur3e.mp4).
+
+#### 2. 
+  * J'ai modélisé la logique de reachability en Python, en utilisant des échantillons sur les faces du mesh et en intégrant la détection de collision avec des obstacles paramétrés (mur, boîte, sphère).
+  * J'ai automatisé l’ajustement de la position de l’objet pour maximiser le nombre de points atteignables, en appliquant une heuristique basée sur les points non atteints.
+  * **Preuve :** Notebook de simulation et Visualisation 3D.
+    * [duck_position.ipynb](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/my_simulation/demos/duck_position.ipynb)
+
+### Evaluer un système informatique
+
+
+---
+
+## Data Engineer
+
+### Valoriser des ensembles de données hétérogènes et multimodales
+
+
+### Orchestrer un processus et une infrastructure de traitement de données
+
+
+### Appliquer les compétences de l’ingénierie en informatique au domaine des données
+
+
+---
+
+## Professionalism (soft skills)
+
+### Communiquer clairement et efficacement
+
+#### 1. 
+  * J'ai rédigé un rapport technique synthétisant mes recherches sur les fonctionnalités du robot pour l'équipe.
+  * J'ai utilisé GitHub pour documenter mes avancées via une Pull Request structurée.
+  * **Preuve :** [Rapport sur Duckify PR #10](https://github.com/Toys-R-Us-Rex/Duckify/pull/10).
+
+#### 2. 
+  * J'ai documenté le workflow de validation de reachability dans le notebook, avec des visualisations et des commentaires pour faciliter la compréhension par l’équipe.
+  * J'ai partagé les résultats et les limitations rencontrées lors des tests, permettant à chacun d’adapter ses propres modules (impression 3D, planification).
+  * **Preuve :** Notebook annoté et Discussion technique.
+    * [reachability_logic.typ](https://github.com/Toys-R-Us-Rex/Duckify/blob/5ad7062d0ad75999d8382ca4f61d3e6b3f3b6256/docs/architecture/robot/reachability_logic.typ)
+
+#### 3.
+  * J'ai été chef de l'overview du projet de la semaine 3. J'ai pu suivre le progrès de chaque groupe pour voir si le projet avancait comme prévu.
+  * J'ai créé les powerpoints de présentations pour le CEO et pour le CTO
+  * **Preuve :** [PR des présentations](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)   
+
+### Adopter une posture professionnelle facilitante face aux situations rencontrées
+
+
+### Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
+
+
+### Critiquer le déroulement d’une production de manière autoréflexive
+
+Bien que la simulation et les premiers mouvements aient été un succès, j'ai passé beaucoup de temps sur la phase de prise en main des librairies. À l'avenir, je devrais paralléliser davantage la lecture de la documentation technique avec des tests pratiques sur le robot réel pour identifier plus tôt les limites de couple ou de précision.
+
+Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Cette petite tâches que nous avons négligé nous fait perdre beacoup de temps, car nous aurions pu définir les mesures exacte pour notre collegue de l'impression 3D.
+
+<br>
+
+La logique de reachability m’a permis de mieux comprendre les contraintes spatiales du robot, mais j’aurais pu anticiper certains cas limites (orientation de l’outil, obstacles dynamiques). À l’avenir, je testerai plus tôt différentes configurations d’obstacles et de TCP pour éviter des itérations tardives.
+
+J’ai aussi constaté que la visualisation des obstacles dans le notebook accélère la détection d’erreurs de paramétrage. Une meilleure synchronisation avec les collègues sur les besoins d’impression 3D aurait permis d’optimiser le workflow.
+
+Finalement, après avoir investi du temps considérable sur ce problème, j'ai réalisé que l'effort requis pour obtenir une solution optimale dépassait son bénéfice pratique. Bien qu'on puisse placer le canard à l'œil, cette approche formelle nous permet au moins d'éviter les risques de collision du bras.
+
+## Questions sur le Processus d'Embauche
+
+1. **Q: Comment avez-vous validé la sécurité des mouvements du bras avant de passer sur le matériel réel ?**
+   * **R:** Nous avons utilisé le simulateur Gazebo (`ur3e-simulator`) pour vérifier qu'aucune collision n'avait lieu avec l'environnement virtuel avant d'exécuter les scripts sur le robot physique.
+2. **Q: Quels critères avez-vous utilisés pour choisir le support de stylo ?**
+   * **R:** Le choix s'est porté sur un support stable permettant un changement rapide, tout en respectant la contrainte de prise du gripper "Two Fingers Adaptive".
+3. **Q: Comment documentez-vous vos recherches pour qu'elles profitent à l'équipe ?**
+   * **R:** Via la rédaction de rapports objectifs sur GitHub et la création de sketches techniques partagés lors des réunions de sprint.
+
+4. **Q: Comment la logique de reachability permet-elle d’éviter les collisions lors de la planification des mouvements du robot ?**
+   * **R:** Elle vérifie pour chaque pose cible si le bras peut l’atteindre sans entrer en collision avec les obstacles définis (boîtes, sphères, murs) en simulant le mouvement dans l’environnement virtuel.
+
+5. **Q: Quels paramètres influencent le résultat de la fonction `is_reachable` ?**
+   * **R:** Les principaux paramètres sont la position et l’orientation de la cible, les limites articulaires du robot, la configuration du TCP, le nombre d’échantillons de roll, et la liste des obstacles présents dans la scène.
+
+6. **Q: Comment avez-vous optimisé la position de l’objet pour maximiser la zone atteignable ?**
+   * **R:** J’ai utilisé une heuristique basée sur les points non atteints : après chaque test, l’objet est déplacé dans la direction qui rapproche les points inaccessibles du robot, jusqu’à ce que tous les points soient atteignables ou qu’aucune amélioration ne soit possible.
+
+7. **Q: Comment avez-vous géré les priorités quand plusieurs blocages techniques apparaissaient en même temps ?**
+  * **R:** J’ai priorisé les tâches selon leur impact sur le sprint (risque de blocage pour l’équipe, dépendances, effort estimé) et j’ai fait des points réguliers pour réajuster rapidement le plan d’action.
+
+8. **Q: Quelle a été votre approche pour collaborer avec les profils non logiciels (ex. impression 3D) ?**
+  * **R:** J’ai formalisé les besoins techniques (dimensions, contraintes de prise, tolérances) dans des échanges clairs et documentés afin que les itérations matérielles soient alignées avec les contraintes du robot.
+
+9. **Q: Si vous deviez relancer le projet, qu’est-ce que vous changeriez dès la première semaine ?**
+  * **R:** Je définirais plus tôt les exigences critiques (stylo, TCP, critères de validation), avec des tests rapides en simulation et sur robot réel en parallèle, pour réduire les allers-retours tardifs.
 
 :::{#portfolios}
 :::
