@@ -1,0 +1,68 @@
+---
+title: "Professionalism & Soft Skills"
+format:
+  html:
+    toc: true
+---
+
+::: {.grid}
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Communiquer clairement et efficacement
+
+* **Rapport Technique** : Rédaction d'une synthèse des recherches sur les fonctionnalités du robot.
+* **Workflow GitHub** : Utilisation de Pull Requests structurées pour documenter les avancées.
+* **Documentation** : Annotation de notebooks et partage des limitations techniques pour aider l'équipe (impression 3D, planification).
+* **Leadership** : Chef de l'overview en semaine 3, suivi de la progression et création des présentations pour le CEO/CTO.
+* **Preuves :**
+  * [Rapport Duckify PR #10](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
+  * [PR des présentations](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)
+ 
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Critiquer le déroulement d’une production
+
+### Analyse Rétrospective
+
+Bien que la simulation et les premiers mouvements aient été un succès, j'ai passé beaucoup de temps sur la phase de prise en main des librairies. À l'avenir, je devrais paralléliser davantage la lecture de la documentation technique avec des tests pratiques sur le robot réel pour identifier plus tôt les limites de couple ou de précision.
+
+Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Cette petite tâches que nous avons négligé nous fait perdre beacoup de temps, car nous aurions pu définir les mesures exacte pour notre collegue de l'impression 3D.
+
+<br>
+
+[La logique de reachability](cs-engineer.html#validation-de-la-zone-atteignable) m’a permis de mieux comprendre les contraintes spatiales du robot, mais j’aurais pu anticiper certains cas limites (orientation de l’outil, obstacles dynamiques). À l’avenir, je testerai plus tôt différentes configurations d’obstacles et de TCP pour éviter des itérations tardives.
+
+J’ai aussi constaté que la visualisation des obstacles dans le notebook accélère la détection d’erreurs de paramétrage. Une meilleure synchronisation avec les collègues sur les besoins d’impression 3D aurait permis d’optimiser le workflow.
+
+Finalement, après avoir investi du temps considérable sur ce problème, j'ai réalisé que l'effort requis pour obtenir une solution optimale dépassait son bénéfice pratique. Bien qu'on puisse placer le canard à l'œil, cette approche formelle nous permet au moins d'éviter les risques de collision du bras.
+
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
+*(En cours de rédaction...)*
+
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Adopter une posture professionnelle facilitante face aux situations rencontrées
+*(En cours de rédaction...)*
+
+:::
+:::
+:::

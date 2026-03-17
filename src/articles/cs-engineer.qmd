@@ -1,0 +1,79 @@
+---
+title: "Computer Science Engineer"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+
+::: {.grid}
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Analyser un problème informatique complexe
+
+### Décomposition et Contraintes
+* J'ai participé à la décomposition du problème de dessin robotisé en composants gérables (sprints/milestones).
+* J'ai identifié les contraintes physiques liées à l'outil, notamment la gestion du grip du stylo et son support.
+* **Preuves :**
+  * [Grip Pen](../assets/semaine1/pen-grip.png)
+  * [Pen Support](../assets/semaine1/pen-support.png)
+  * [Sprint 1 Roadmap](../assets/semaine1/sprint1.png)
+
+
+### Validation de la zone atteignable
+* J'ai décomposé le problème de validation de la zone atteignable du robot en étapes claires : génération de points sur la surface, vérification des collisions et optimisation de la position de l'objet.
+* J'ai identifié les paramètres critiques (limites articulaires, obstacles, orientation de l'outil) influençant la capacité du bras à atteindre chaque point.
+* **Preuve :** [reachability.py](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/urbasic/URBasic/reachability.py)
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Concevoir une solution théorique modélisée
+
+* J'ai créé un environnement de simulation qui intègre le canard sur son support et le stylo dans la main du robot.
+* Cela nous permettra d'analyser et d'évaluer des simulations de dessins sans le robot physique.
+* **Preuves :** [Environment de simulation](../assets/semaine3/sim-env.png) | [Tutoriel de setup](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
+
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Implémenter une approche théorique modélisée
+
+### Simulation et Contrôle
+* Configuration de Gazebo pour valider les modèles de contrôle du bras UR3-e.
+* Implémentation d'un script Python pour les séquences de mouvements.
+* **Preuve :** [Simulation Démo](../assets/semaine1/demo.mkv)
+
+### Logique de Reachability
+* Modélisation via échantillonnage sur les faces du mesh et détection de collision.
+* Automatisation de l'ajustement de la position de l'objet via une heuristique basée sur les points non atteints.
+* **Preuve :** [`duck_position.ipynb`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/8dd64c2fefc79520d9f83af752a56bd78126c42d/my_simulation/demos/duck_position.ipynb)
+
+### Espace de Travail
+* Modélisation 3D de l'espace de travail pour les calculs de collision.
+* Avec ce model, les calculs de kinematic éviteront les collisions avec l'environment.
+* **Preuve :** [Workspace Model](../assets/semaine4/workspace-model.png)
+
+### Filtrer les traces
+* J'ai créé une classe qui permet de séparer les traces du canard en deux types differents, la droite et la gauche.
+* Cela est nécessaire car si nous voulons atteindre tout les points, nous devons dessiner sur un côté à la fois.
+* **Preuve :** 
+  * [`filter.py`](http://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/filter.py)
+  * [`segment.py`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/segment.py)
+  * [Plot du résultat](../assets/semaine5/trace_filter.png)
+
+:::
+:::
+:::
+
+:::
