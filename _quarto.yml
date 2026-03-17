@@ -13,6 +13,19 @@ website:
     left:
       - href: src/index.qmd
         text: Home
+
+      - href: src/articles/cs-engineer.qmd
+        text: CS Engineer
+
+      - href: src/articles/data-engineer.qmd
+        text: Data Engineer
+
+      - href: src/articles/professionalism.qmd
+        text: Professionalism
+        
+      - href: src/articles/qa.qmd
+        text: Questions
+        
     tools:
       - icon: github
         href: https://github.com/NathanAnto/duckify-portfolio

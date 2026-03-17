@@ -1,17 +1,17 @@
 # Duckify Portfolio
 
-<!-- [![Website ...](https://img.shields.io/website-up-down-green-red/http/olivier.amacker.dev/304.2-medical-data-science/src/index.html.svg)](https://olivier.amacker.dev/304.2-medical-data-science/) -->
+[![Website https://nathananto.github.io/duckify-portfolio/](https://img.shields.io/website-up-down-green-red/http/nathananto.github.io/duckify-portfolio/index.html.svg)](https://nathananto.github.io/duckify-portfolio/)
 
-TODO
+This repo contains the content of my semester project done in the 303.1 - Semester project course
 
 ## Website
 
-TODO
+This project website is available [here](https://nathananto.github.io/duckify-portfolio/) or locally at `_site/index.html` -->
 
-<!-- This project website is available [here](https://olivier.amacker.dev/304.2-medical-data-science/index.html) or locally at `_site/index.html` -->
-
-The website contains the following sections:
- - TODO
+The website contains the following competency sections:
+ - Computer Science Engineer
+ - Data Engineer
+ - Professionalism
 
 ## Local Setup
 

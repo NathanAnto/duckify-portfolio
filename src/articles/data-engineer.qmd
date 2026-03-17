@@ -1,0 +1,39 @@
+---
+title: "Data Engineer"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+---
+
+::: {.grid}
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Valoriser des ensembles de données hétérogènes et multimodales
+*(En cours de rédaction...)*
+:::
+:::
+:::
+
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Orchestrer un processus et une infrastructure de traitement de données
+
+*(En cours de rédaction...)*
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+## Appliquer les compétences de l’ingénierie en informatique au domaine des données
+
+*(En cours de rédaction...)*
+:::
+:::
+:::

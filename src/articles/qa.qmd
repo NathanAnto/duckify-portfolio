@@ -1,0 +1,86 @@
+---
+title: "Questions sur le Processus d'Embauche"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+---
+
+::: {.grid}
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+### Sécurité et Technique
+**1. Comment avez-vous validé la sécurité des mouvements avant le matériel réel ?**
+Nous avons utilisé le simulateur Gazebo pour vérifier l'absence de collisions virtuelles avant l'exécution physique.
+
+**2. Quels critères pour le choix du support de stylo ?**
+La stabilité, la rapidité de changement et la compatibilité avec le gripper "Two Fingers Adaptive".
+
+**3. Comment la logique de reachability évite-t-elle les collisions ?**
+Elle vérifie chaque pose cible par rapport aux obstacles définis (boîtes, murs) en simulant le mouvement en amont.
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+### Collaboration et Gestion
+**4. Comment gérez-vous les priorités lors de blocages multiples ?**
+Priorisation selon l'impact sur le sprint et les dépendances de l'équipe, avec des points de synchronisation réguliers.
+
+**5. Approche avec les profils non-logiciels (Impression 3D) ?**
+Formalisation des besoins techniques (dimensions, tolérances) pour aligner les itérations matérielles avec les contraintes du robot.
+
+**6. Que changeriez-vous dès la semaine 1 ?**
+Définir les exigences critiques (stylo, TCP) plus tôt avec des tests "Quick & Dirty" en parallèle de la simulation.
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+### Stratégie et Priorité
+
+**7. Comment avez-vous géré les priorités quand plusieurs blocages techniques apparaissaient en même temps ?**
+J’ai priorisé les tâches selon leur impact sur le sprint (risque de blocage pour l’équipe, dépendances, effort estimé) et j’ai fait des points réguliers pour réajuster rapidement le plan d’action.
+
+**8. Quelle a été votre approche pour collaborer avec les profils non logiciels (ex. impression 3D) ?**
+J’ai formalisé les besoins techniques (dimensions, contraintes de prise, tolérances) dans des échanges clairs et documentés afin que les itérations matérielles soient alignées avec les contraintes du robot.
+
+**9. Si vous deviez relancer le projet, qu’est-ce que vous changeriez dès la première semaine ?**
+Je définirais plus tôt les exigences critiques (stylo, TCP, critères de validation), avec des tests rapides en simulation et sur robot réel en parallèle, pour réduire les allers-retours tardifs.
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+### 
+
+**10. **
+
+**11. **
+
+**12. **
+:::
+:::
+:::
+
+::: {.g-col-12}
+::: {.card .shadow-sm .mb-4}
+::: {.card-body}
+### 
+
+**13. **
+
+**14. **
+
+**15. **
+:::
+:::
+:::
