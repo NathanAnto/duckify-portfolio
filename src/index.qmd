@@ -68,12 +68,3 @@ Ce document retrace les compétences acquises et les réalisations techniques ef
 ## Questions (FAQ)
 Retrouvez les détails sur mes choix techniques, la sécurité du robot et l'optimisation des processus sur la page :
 **[Questions sur le Processus d'Embauche](articles/qa.html)**
-
-
-## What is Missing ?
-
-- Add faced problems
-- Explain reasoning behind filter class (reachability)
-- Analyse de .urdf .sdf pour la simulation
-- Mieux démontrer les compétences avec les artéfacts
-- Préciser l'analyse humain dans la partir robot tech analysis
