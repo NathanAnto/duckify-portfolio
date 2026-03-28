@@ -6,7 +6,7 @@ This repo contains the content of my semester project done in the 303.1 - Semest
 
 ## Website
 
-This project website is available [here](https://nathananto.github.io/duckify-portfolio/) or locally at `_site/index.html` -->
+This project website is available [here](https://nathananto.github.io/duckify-portfolio/) or locally at `_site/index.html`
 
 The website contains the following competency sections:
  - Computer Science Engineer

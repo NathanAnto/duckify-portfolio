@@ -12,22 +12,39 @@ format:
 ::: {.card-body}
 ## Communiquer clairement et efficacement
 
-* **Rapport Technique** : Rédaction d'une synthèse des recherches sur les fonctionnalités du robot.
-* **Workflow GitHub** : Utilisation de Pull Requests structurées pour documenter les avancées.
-* **Documentation** : Annotation de notebooks et partage des limitations techniques pour aider l'équipe (impression 3D, planification).
-* **Leadership** : Chef de l'overview en semaine 3, suivi de la progression et création des présentations pour le CEO/CTO.
-* **Preuves :**
-  * [Rapport Duckify PR #10](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
-  * [PR des présentations](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)
- 
+### Partage de connaissances
+
+Pour partager ce que j'ai fait, j'ai souvent écrit de la documentation pour faciliter la tâche pour mes collègues.
+
+* [Setup Simulation](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
+* [README.md Robot](https://github.com/Toys-R-Us-Rex/Duckify/blob/main/robot/README.md)
+* [Rapport robot analyse](https://toys-r-us-rex.github.io/Duckify/architecture/robot/robot_technical_analysis.pdf)
+
+
+### Pull Requests
+  * [PR 10 - Tech docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
+  * [PR 37 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/37)
+  * [PR 38 - Reachability docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/38)
+  * [PR 54 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)
+  * [PR 64 - Url Fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/64)
+  * [**PR 91 - Robot Integration**](https://github.com/Toys-R-Us-Rex/Duckify/pull/91)
+
 :::
 :::
 :::
 
 ::: {.g-col-12}
-::: {.card .shadow-sm .mb-4}
+::: {.card .shadow-sm .mb-4} 
 ::: {.card-body}
 ## Critiquer le déroulement d’une production
+
+### PR Reviews
+  * [PR 11 - Portfolio links](https://github.com/Toys-R-Us-Rex/Duckify/pull/11)
+  * [**PR 34 - Basic Tracing Pipeline**](https://github.com/Toys-R-Us-Rex/Duckify/pull/34)
+  * [PR 63 - Daily Meeting doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/63)
+  * [PR 69 - Duck reoriented doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/69)
+  * [PR 76 - Palette configuration](https://github.com/Toys-R-Us-Rex/Duckify/pull/76)
+  * [PR 77 - OpenGL fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/77)
 
 ### Analyse Rétrospective
 
@@ -51,7 +68,10 @@ Finalement, après avoir investi du temps considérable sur ce problème, j'ai r
 ::: {.card .shadow-sm .mb-4}
 ::: {.card-body}
 ## Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
-*(En cours de rédaction...)*
+
+### Changement de version Python
+
+Pendant l'intégration robot, j'ai renconctré un problème avec une librarie python `pybullet`.
 
 :::
 :::
@@ -61,7 +81,10 @@ Finalement, après avoir investi du temps considérable sur ce problème, j'ai r
 ::: {.card .shadow-sm .mb-4}
 ::: {.card-body}
 ## Adopter une posture professionnelle facilitante face aux situations rencontrées
-*(En cours de rédaction...)*
+
+### Soutient aux collègues
+
+Quand Mr. Venturi a rejoint l'équipe robot, j'ai prit le temps de l'aider à mettre en place les outils nécessaires, pour qu'il puisse commencer à travailler au plus vite. [Meeting du 10 mars](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-10.pdf)
 
 :::
 :::

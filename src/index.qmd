@@ -1,7 +1,11 @@
+<!-- 
+Structure fait avec l'aide d'ia générative
+-->
+
 ---
 title: "Portfolio: Gen AI & Robot Control"
 subtitle: "Projet Duckify | 304.1"
-date: 2026-03-17
+date: 2026-03-27
 published-title: "Last updated on"
 format:
   html:
@@ -22,9 +26,9 @@ Ce document retrace les compétences acquises et les réalisations techniques ef
 ::: {.card-body}
 
 ### [Computer Science Engineer](articles/cs-engineer.html){.stretched-link}
-* **Analyse & Décomposition**
-* **Simulation**
-* **Reachability**
+* **Analyser un problème informatique complexe**
+* **Concevoir une solution théorique modélisée**
+* **Implémenter une approche théorique modélisée**
 
 :::
 :::
@@ -35,9 +39,9 @@ Ce document retrace les compétences acquises et les réalisations techniques ef
 ::: {.card-body}
 
 ### [Data Engineer](articles/data-engineer.html){.stretched-link}
-* **Valorisation**
-* **Orchestration**
-* **Ingénierie**
+* **Valoriser des ensembles de données hétérogènes et multimodales**
+* **Orchestrer un processus et une infrastructure de traitement de données**
+* **Appliquer les compétences de l’ingénierie en informatique au domaine des données**
 
 :::
 :::
@@ -48,9 +52,10 @@ Ce document retrace les compétences acquises et les réalisations techniques ef
 ::: {.card-body}
 
 ### [Professionalism](articles/professionalism.html){.stretched-link}
-* **Communication**
-* **Auto-réflexion**
-* **Collaboration**
+* **Communiquer clairement et efficacement**
+* **Critiquer le déroulement d’une production**
+* **Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques**
+* **Adopter une posture professionnelle facilitante face aux situations rencontrées**
 
 :::
 :::
@@ -63,3 +68,12 @@ Ce document retrace les compétences acquises et les réalisations techniques ef
 ## Questions (FAQ)
 Retrouvez les détails sur mes choix techniques, la sécurité du robot et l'optimisation des processus sur la page :
 **[Questions sur le Processus d'Embauche](articles/qa.html)**
+
+
+## What is Missing ?
+
+- Add faced problems
+- Explain reasoning behind filter class (reachability)
+- Analyse de .urdf .sdf pour la simulation
+- Mieux démontrer les compétences avec les artéfacts
+- Préciser l'analyse humain dans la partir robot tech analysis
