@@ -12,22 +12,34 @@ format:
 ::: {.card-body}
 ## Communiquer clairement et efficacement
 
+### Travail de scribe
+
+J'ai fait le scribe de quelques réunions (3 daily et 1 weekly)
+
+* Daily Meetings
+  * [23 février](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-02-23.pdf)
+  * [10 mars](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-10.pdf)
+  * [23 mars](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-23.pdf)
+* Weekly Meeting
+  * [13 mars](https://toys-r-us-rex.github.io/Duckify/meetings/weekly/2026-03-13.pdf)
+
 ### Partage de connaissances
 
 Pour partager ce que j'ai fait, j'ai souvent écrit de la documentation pour faciliter la tâche pour mes collègues.
 
 * [Setup Simulation](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
-* [README.md Robot](https://github.com/Toys-R-Us-Rex/Duckify/blob/main/robot/README.md)
+* [README.md Robot](https://github.com/Toys-R-Us-Rex/Duckify/tree/feat/containerization/robot)
 * [Rapport robot analyse](https://toys-r-us-rex.github.io/Duckify/architecture/robot/robot_technical_analysis.pdf)
 
 
 ### Pull Requests
-  * [PR 10 - Tech docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
-  * [PR 37 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/37)
-  * [PR 38 - Reachability docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/38)
-  * [PR 54 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)
-  * [PR 64 - Url Fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/64)
-  * [**PR 91 - Robot Integration**](https://github.com/Toys-R-Us-Rex/Duckify/pull/91)
+* [PR #10 - Tech docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/10)
+* [PR #37 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/37)
+* [PR #38 - Reachability docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/38)
+* [PR #54 - Pres docs](https://github.com/Toys-R-Us-Rex/Duckify/pull/54)
+* [PR #64 - Url Fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/64)
+* [**PR #91 - Robot Integration**](https://github.com/Toys-R-Us-Rex/Duckify/pull/91)
+* [**PR #107 - Containerize Project**](https://github.com/Toys-R-Us-Rex/Duckify/pull/107)
 
 :::
 :::
@@ -39,26 +51,37 @@ Pour partager ce que j'ai fait, j'ai souvent écrit de la documentation pour fac
 ## Critiquer le déroulement d’une production
 
 ### PR Reviews
-  * [PR 11 - Portfolio links](https://github.com/Toys-R-Us-Rex/Duckify/pull/11)
-  * [**PR 34 - Basic Tracing Pipeline**](https://github.com/Toys-R-Us-Rex/Duckify/pull/34)
-  * [PR 63 - Daily Meeting doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/63)
-  * [PR 69 - Duck reoriented doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/69)
-  * [PR 76 - Palette configuration](https://github.com/Toys-R-Us-Rex/Duckify/pull/76)
-  * [PR 77 - OpenGL fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/77)
+* [PR #11 - Portfolio links](https://github.com/Toys-R-Us-Rex/Duckify/pull/11)
+* [**PR #34 - Basic Tracing Pipeline**](https://github.com/Toys-R-Us-Rex/Duckify/pull/34)
+* [PR #63 - Daily Meeting doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/63)
+* [PR #69 - Duck reoriented doc](https://github.com/Toys-R-Us-Rex/Duckify/pull/69)
+* [PR #76 - Palette configuration](https://github.com/Toys-R-Us-Rex/Duckify/pull/76)
+* [PR #77 - OpenGL fix](https://github.com/Toys-R-Us-Rex/Duckify/pull/77)
+* [PR #110 - Tracing](https://github.com/Toys-R-Us-Rex/Duckify/pull/110)
+
+### Weekly Meetings
+
+* [Week 2 - slide 20](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf)
+* [Week 3 - slide 29](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf)
+* [Week 4 - slide 46](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf)
 
 ### Analyse Rétrospective
 
+#### Week 1 overview
+
 Bien que la simulation et les premiers mouvements aient été un succès, j'ai passé beaucoup de temps sur la phase de prise en main des librairies. À l'avenir, je devrais paralléliser davantage la lecture de la documentation technique avec des tests pratiques sur le robot réel pour identifier plus tôt les limites de couple ou de précision.
 
-Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Cette petite tâches que nous avons négligé nous fait perdre beacoup de temps, car nous aurions pu définir les mesures exacte pour notre collegue de l'impression 3D.
+Nous n'avons pas réussi à définir clairement certains besoins. Trop de temps a été passé a comprendre le côté technique plutôt que de réfléchir à ce que nous aurions besoins dans le futur. Par exemple définir les stylos. Ces petites tâches que nous avons négligé nous font perdre beaucoup de temps, car nous aurions pu définir les mesures exactes pour notre collègue de l'impression 3D.
 
-<br>
+#### Reachability
 
-[La logique de reachability](cs-engineer.html#validation-de-la-zone-atteignable) m’a permis de mieux comprendre les contraintes spatiales du robot, mais j’aurais pu anticiper certains cas limites (orientation de l’outil, obstacles dynamiques). À l’avenir, je testerai plus tôt différentes configurations d’obstacles et de TCP pour éviter des itérations tardives.
+[La logique de reachability](cs-engineer.html#reachability) m’a permis de mieux comprendre les contraintes spatiales du robot, mais j’aurais pu anticiper certains cas limites (orientation de l’outil, obstacles dynamiques). À l’avenir, je testerai plus tôt différentes configurations d’obstacles et de TCP pour éviter des itérations tardives. C'est pourquoi j'ai créé un rapport d'analyse pour mieux comprendre les différetes contraintes à prendre en compte.
 
 J’ai aussi constaté que la visualisation des obstacles dans le notebook accélère la détection d’erreurs de paramétrage. Une meilleure synchronisation avec les collègues sur les besoins d’impression 3D aurait permis d’optimiser le workflow.
 
-Finalement, après avoir investi du temps considérable sur ce problème, j'ai réalisé que l'effort requis pour obtenir une solution optimale dépassait son bénéfice pratique. Bien qu'on puisse placer le canard à l'œil, cette approche formelle nous permet au moins d'éviter les risques de collision du bras.
+Après avoir investi du temps considérable sur ce problème, j'ai réalisé que l'effort requis pour obtenir une solution optimale dépassait son bénéfice pratique. Bien qu'on puisse placer le canard à l'œil, cette approche formelle nous permet au moins d'éviter les risques de collision du bras.
+
+Pybullet a beaucoup simplifier la visualization des mouvements du bras robot. J'ai pu faire des animations qui aident à la démonstration et à l'évaluation des mouvements
 
 :::
 :::
@@ -71,7 +94,17 @@ Finalement, après avoir investi du temps considérable sur ce problème, j'ai r
 
 ### Changement de version Python
 
-Pendant l'intégration robot, j'ai renconctré un problème avec une librarie python `pybullet`.
+Pendant l'intégration robot, j'ai renconctré un problème avec une librarie python `pybullet`. J'ai dû argumenter pourquoi c'était nécessaire de rétrograder la version python du projet de la version `3.13` à la version `3.11`.
+
+* [Daily Meeting with reference](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-25.pdf)
+* [Changement de version python](https://github.com/Toys-R-Us-Rex/Duckify/pull/91/changes/7d64f50452f5e7152196902b25950ce0cacc75be)
+* [Erreur de pybullet](../assets/semaine6/compiler_error.png)
+
+### Containerization
+
+Après avoir fait face au problème de version python [précédant](professionalism.html#changement-de-version-python), je pensais que passer le project dans des containers pouvait empêcher des problèmes de dépendances dans le futur.
+
+* [Commit de quand j'ai commencé à intégrer Docker](https://github.com/Toys-R-Us-Rex/Duckify/pull/91/changes/7d64f50452f5e7152196902b25950ce0cacc75be)
 
 :::
 :::
@@ -84,8 +117,12 @@ Pendant l'intégration robot, j'ai renconctré un problème avec une librarie py
 
 ### Soutient aux collègues
 
-Quand Mr. Venturi a rejoint l'équipe robot, j'ai prit le temps de l'aider à mettre en place les outils nécessaires, pour qu'il puisse commencer à travailler au plus vite. [Meeting du 10 mars](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-10.pdf)
+Quand Mr. Venturi a rejoint l'équipe robot, j'ai pris le temps de l'aider à mettre en place les outils nécessaires, pour qu'il puisse commencer à travailler au plus vite.
+
+* [Meeting du 10 mars](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-10.pdf)
 
 :::
 :::
+:::
+
 :::
