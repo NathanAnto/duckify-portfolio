@@ -23,15 +23,3 @@ To set up the project website locally:
 4. Run `uv run quarto render` to build the site
 
 The site will be in the `_site/` directory.
-
-## Submodules
-
-This repository uses Git submodules to include related projects:
- - TODO
-
-To initialize and update submodules after cloning:
-
-```bash
-git submodule init
-git submodule update
-```

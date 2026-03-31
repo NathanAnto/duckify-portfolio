@@ -57,30 +57,4 @@ Je définirais plus tôt les exigences critiques (stylo, TCP, critères de valid
 :::
 :::
 
-::: {.g-col-12}
-::: {.card .shadow-sm .mb-4}
-::: {.card-body}
-### 
-
-**10. **
-
-**11. **
-
-**12. **
-:::
-:::
-:::
-
-::: {.g-col-12}
-::: {.card .shadow-sm .mb-4}
-::: {.card-body}
-### 
-
-**13. **
-
-**14. **
-
-**15. **
-:::
-:::
 :::

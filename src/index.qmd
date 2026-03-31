@@ -5,7 +5,7 @@ Structure fait avec l'aide d'ia générative
 ---
 title: "Portfolio: Gen AI & Robot Control"
 subtitle: "Projet Duckify | 304.1"
-date: 2026-03-27
+date: 2026-03-31
 published-title: "Last updated on"
 format:
   html:

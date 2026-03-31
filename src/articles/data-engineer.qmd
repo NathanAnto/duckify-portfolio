@@ -12,7 +12,13 @@ format:
 ::: {.card .shadow-sm .mb-4}
 ::: {.card-body}
 ## Valoriser des ensembles de données hétérogènes et multimodales
-*(En cours de rédaction...)*
+
+J'ai utiliser les données fourni par l'équipe tracing pour les filter (côté droite et gauche)
+
+* [`filter.py`](http://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/filter.py)
+* [`segment.py`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/segment.py)
+* [Plot du résultat](../assets/semaine5/trace_filter.png)
+
 :::
 :::
 :::
@@ -23,7 +29,19 @@ format:
 ::: {.card-body}
 ## Orchestrer un processus et une infrastructure de traitement de données
 
-*(En cours de rédaction...)*
+### Image Docker dans le GHCR
+
+Pour pouvoir lancer une simulation robot, on a besoin de créer un container docker avec une certaine image. Malheureusement, cette image doit être charger via un fichier zip. Ce n'est pas très pratique pour le partager. J'ai alors upload l'image docker au GHCR de l'organisation Toys'R'Us'Rex, pour que toute les personnes travaillant sur ce projet n'aie plus qu'à pull l'image. 
+
+- [Docker Simulation Image Package](https://github.com/orgs/Toys-R-Us-Rex/packages/container/package/iscoin-simulator)
+- [Docker Simulation Image Package png](../assets/semaine6/iscoin-simulator.png)
+
+### Containerization 
+
+j'ai créé les fichiers de configurations docker, pour pouvoir containerizer le projet. C'est nécessaire pour régler des problèmes de dépendences que j'ai rencrontré et pour éviter des nouveau dans le futur.
+
+* [PR #107 - Containerization changes](https://github.com/Toys-R-Us-Rex/Duckify/pull/107/changes)
+
 :::
 :::
 :::

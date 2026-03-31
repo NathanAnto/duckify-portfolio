@@ -1,0 +1,67 @@
+Single Point Cone Search Analysis
+Output log: single_point_analysis_example.log
+
+Initializing robot and collision checker...
+TCP consistency (mm):    	 2.082562719112478
+Flange motion (cm):      	 29.500662986132912
+Rotation variation (deg):	 36.46464134140863
+TCP in flange frame: [1.30905845e-04 3.33683034e-04 2.45280738e-01]  <-
+TCP in tool   frame: [ 0.02653373 -0.32601224 -0.00190617]
+PyBullet running in headless mode (cid=0)
+Loading duck mesh...
+Duck surface area: 27787 mm² -> sampling 2778 points
+After filtering (Y>=0, Z>=1): 1202 points
+
+======================================================================
+Selected Point: 0
+======================================================================
+
+Point in STL coordinates (mm): [15.51773434 19.93298498 88.58276913]
+Point in robot frame (m):       (0.0155, -0.2801, 0.2436)
+Surface normal (local):         [0.2011916  0.89218056 0.40439537]
+Surface normal (robot frame):   (0.2012, 0.8922, 0.4044)
+Base orientation (rotvec):      (1.9384, -0.4371, 0.0000)
+Base orientation (degrees):     (111.06°, -25.05°, 0.00°)
+
+======================================================================
+Cone Search Analysis
+======================================================================
+
+Max cone angle: 25.0°
+Cone step:      5.0°
+Base TCP:       (0.0155, -0.2801, 0.2436)
+
+Cone Search Results by Tilt Angle:
+
+Tilt (°)     Valid    Invalid  Total    Success %    Failure Reasons               
+--------------------------------------------------------------------------------------------------
+5.0          0        72       72       0.0          IK has no solution(72)        
+10.0         13       59       72       18.1         IK has no solution(59)        
+15.0         23       49       72       31.9         IK has no solution(49)        
+20.0         27       45       72       37.5         IK has no solution(45)        
+25.0         28       44       72       38.9         IK has no solution(43), Self-collision(1)
+
+======================================================================
+Summary Statistics
+======================================================================
+
+Total orientations tested:      360
+Valid IK solutions:             91
+Invalid attempts:               269
+Overall success rate:           25.28%
+Analysis time:                  0.204 seconds
+
+Failure Reasons (All Tilts):
+
+  IK has no solution                                :  268 ( 99.6%)
+  Self-collision                                    :    1 (  0.4%)
+
+Best performing tilt angles:
+  25.0°: 38.9% success (28/72)
+  20.0°: 37.5% success (27/72)
+  15.0°: 31.9% success (23/72)
+
+
+PyBullet disconnected
+
+Log saved to: single_point_analysis_example.log

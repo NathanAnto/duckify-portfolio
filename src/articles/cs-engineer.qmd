@@ -14,14 +14,20 @@ format:
 ::: {.card-body}
 ## Analyser un problème informatique complexe
 
-### Reachability
+### Robot Tech Analysis
 
-TODO: Complete
+J'ai étudié les caractéristiques et composants techniques du robot pour mieux comprendre ses capacités et ses limites.
 
-[Reachability Logic](https://toys-r-us-rex.github.io/Duckify/architecture/robot/reachability_logic.pdf)
+* [Robot Tech Analysis](https://toys-r-us-rex.github.io/Duckify/architecture/robot/robot_technical_analysis.pdf)
+
+### Analyse Reachability
+
+J'ai analysé le problème de comment trouver l'angle auquel le robot peut atteindre un certain point sur le canard.
+
+* [Cone Search Analysis](https://toys-r-us-rex.github.io/Duckify/architecture/robot/cone_search_analysis.pdf)
 
 :::
-:::
+::: 
 :::
 
 ::: {.g-col-12}
@@ -29,20 +35,34 @@ TODO: Complete
 ::: {.card-body}
 ## Concevoir une solution théorique modélisée
 
+### Reflexion technique sur les stylos
+
+J'ai réflchis à comment le bras robot allait tenir le stylo pour être plus efficace. La décision finale était de la tenir comme sur le sketch pour éviter des glicements.
+
+* [Pen grip](../assets/semaine1/pen-grip.png)
+* [Bad pen grip](../assets/semaine1/pen-grip-bad.png)
+* [Video proof](../assets/semaine4/infinity.mp4)
+
+Ensuite la reflexion de comment le robot allait prendre ces stylos pour pouvoir dessiner. Des support à stylos qui tiennent les stylo verticalemet avec la pointe du stylo dans le support, permettant au bras de les prendre depuis le haut.
+
+* [pen support](../assets/semaine1/pen-support.png)
+
+### Design de la Reachability
+
+Pour implémenter le code de reachabilty d'un point, avec l'équipe robot, nous avons chercher un algorithm optimal. Nous avons décidé de faire une recherche en cône, où le bras robot tourne autour de la normal d'un point, essayant d'atteindre le point. La fonction retournera donc toute les angle depuis où ce point est atteignable.
+
+* [Cone Search Design](https://toys-r-us-rex.github.io/Duckify/architecture/robot/cone_search_analysis.pdf)
+
 ### Espace de Travail
 
 J'ai créé un environnement de simulation qui intègre le canard sur son support et le stylo dans la main du robot. Cela nous permettra d'analyser et d'évaluer des simulations de dessins sans le robot physique.
-* **Preuves :** [Environment de simulation](../assets/semaine3/sim-env.png) | [Tutoriel de setup](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
 
-J'ai modélisé en 3D l'espace de travail pour les calculs de collision. Avec ce model, les calculs de kinematic éviteront les collisions avec l'environment.
-* **Preuve :** [Workspace Model](../assets/semaine4/workspace-model.png)
+* [Environment de simulation](../assets/semaine3/sim-env.png)
+* [Tutoriel de setup](https://github.com/Toys-R-Us-Rex/ur3e-simulator/blob/main/simulation_setup.md)
 
-### Image Docker dans le GHCR
+Pour éviter les collisions avec le sol et d'autres objects physique autour du bras robot, j'ai fait un simple modèle 3D qui représent le bureau de travail du bras robot. Pour faire cela j'ai pris des mesures au milimètres près pour assurer la précision du modèle.
 
-Pour pouvoir lancer une simulation robot, on a besoin de créer un container docker avec une certaine image. Malheureusement, cette image doit être charger via un fichier zip. Ce n'est pas très pratique pour le partager. J'ai alors upload l'image docker au GHCR de l'organisation Toys'R'Us'Rex, pour que toute les personnes travaillant sur ce projet n'aie plus qu'à pull l'image. 
-
-- [Docker image package LINK](https://github.com/orgs/Toys-R-Us-Rex/packages/container/package/iscoin-simulator)
-- [Docker image package PNG](../assets/semaine6/iscoin-simulator.png)
+* [Workspace Model](../assets/semaine4/workspace-model.png)
 
 :::
 :::
@@ -57,36 +77,36 @@ Pour pouvoir lancer une simulation robot, on a besoin de créer un container doc
 
 Configuration de Gazebo pour valider les modèles de contrôle du bras UR3-e. Implémentation d'un script Python pour les séquences de mouvements.
 
-* **Preuve :** [Simulation Démo](../assets/semaine1/demo.mkv)
+* [Simulation Démo](../assets/semaine1/demo.mkv)
 
 ### Logique de Reachability
 
 Avec l'aide de Gemini, j'ai implémenté une fonction `get_reachable`, qui nous retourne les angles où un point sur le canard est accessible. Pour le faire, on cherche dans un cône autour de la normale d'un point où il n'y a pas de collisions.
 
-* **Preuve :** [Fonction `get_reachable`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/archived/is-reachable-safety/src/safety.py)
+* [`get_reachable()`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/archived/is-reachable-safety/src/safety.py)
+* [`_cone_search()`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/safety.py#L357)
 
 ### Filtrer les traces
 
 J'ai créé une classe qui permet de séparer les traces du canard en deux types differents, la droite et la gauche. Cela est nécessaire car si nous voulons atteindre tout les points, nous devons dessiner sur un côté à la fois.
 
-* **Preuve :** 
-  * [`filter.py`](http://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/filter.py)
-  * [`segment.py`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/segment.py)
-  * [Plot du résultat](../assets/semaine5/trace_filter.png)
+* [`filter.py`](http://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/filter.py)
+* [`segment.py`](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/src/segment.py)
+* [Plot du résultat](../assets/semaine5/trace_filter.png)
 
 ### Transitions de stylo
 
 Après avoir effectué des tests de transitions de stylo avec le robot physique, il fallait que ce code soit facilement intégrable dans la partie dessin. Pour cela j'ai transformé le code de test en classe. Cette classe peut être utilisé très simplement.
 
 * [`pen.py`](https://github.com/Toys-R-Us-Rex/Duckify/blob/main/robot/src/pen.py)
-* [Vidéo démo](../assets/semaine5/pen_transition.mp4)
 
 ### Integration Simulateur
 
-Jusqu'à présent, le simulateur était une image docker chargée via un fichier zip, mais ce n'était pas très pratique à partager avec d'autres collègues. La solution que j'ai pensée était d'utiliser un référentiel de containers. J'ai vu que nous pouvions télécharger l'image docker sur le GHCR. Une fois téléchargée, les personnes de l'organisation github avaient seulement besoin d'exécuter un docker pull pour obtenir l'image : [iscoin-simulator](https://github.com/orgs/Toys-R-Us-Rex/packages/container/package/iscoin-simulator).
+Jusqu'à présent, le simulateur était une image docker chargée via un fichier zip, mais ce n'était pas très pratique à partager avec d'autres collègues. La solution que j'ai pensée était d'utiliser un référentiel de containers. J'ai vu que nous pouvions télécharger l'image docker sur le GHCR. Une fois téléchargée, les personnes de l'organisation github avaient seulement besoin d'exécuter un docker pull pour obtenir l'image : [iscoin-simulator:v1.0.0](https://github.com/orgs/Toys-R-Us-Rex/packages/container/package/iscoin-simulator).
 
-J'ai ajouté un guide sur comment intégrer tout cela dans le fichier [robot README.md](https://github.com/Toys-R-Us-Rex/Duckify/blob/main/robot/README.md).
+J'ai ajouté un guide sur comment intégrer tout cela dans le fichier.
 
+* [README.md Robot](https://github.com/Toys-R-Us-Rex/Duckify/tree/feat/containerization/robot)
 
 :::
 :::
@@ -97,7 +117,24 @@ J'ai ajouté un guide sur comment intégrer tout cela dans le fichier [robot REA
 ::: {.card-body}
 
 ## Evaluer un système informatique
-*(En cours de rédaction...)*
+
+### Reachability
+
+* **Cone Search**
+  * [Vidéo cone search](../assets/semaine4/cone_search.mp4)
+  * [Résultat Plot](../assets/semaine3/get-reachable-plot.png)
+  * [Logs de test sur 100 etr 1000 points](../assets/semaine4/cone_search_test_example.log)
+  * [Logs de test sur 1 point](../assets/semaine4/single_point_analysis_example.log.log)
+* **Collision Test**
+  * [Duck Collision Test in pybullet](https://github.com/Toys-R-Us-Rex/ur3e-control/blob/dev/clean-merge-pipeline/pybullet_duck_reachability.py)
+  * [Résultat Plot](../assets/semaine4/duck-surface-reachability.png)
+
+### Transitions de stylos
+
+Des tests de transitions de stylos on était effectué sur le simulateur et le bras robot physique
+
+* [Transitions Simulateur](../assets/semaine5/pen_transition_simulation.mp4)
+* [Transitions Robot](../assets/semaine5/pen_transition.mp4)
 
 :::
 :::
